@@ -39,11 +39,11 @@ jobs:
         uses: actions/setup-node@v3.4.1
         with:
           # Set always-auth in npmrc.
-          always-auth: false # optional, default is false
+          # always-auth: false # optional, default is false
           # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
           node-version: 14 # optional
           # File containing the version Spec of the version to use.  Examples: .nvmrc, .node-version, .tool-versions.
-          node-version-file: .nvmrc # optional
+          # node-version-file: .nvmrc # optional
           # Target architecture for Node to use. Examples: x86, x64. Will use system architecture by default.
           # architecture: x64 # optional
           # Set this option if you want the action to check for the latest available version that satisfies the version spec.
@@ -55,6 +55,6 @@ jobs:
           # Used to pull node distributions from node-versions.  Since there's a default, this is typically not supplied by the user.
           # token: # optional, default is ${{ github.token }}
           # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm.
-          cache: npm # optional
+          # cache: npm # optional
           # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
           # cache-dependency-path: # optional
