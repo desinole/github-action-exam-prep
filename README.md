@@ -10,3 +10,4 @@ Instead of [Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/au
 4. Manage GitHub Actions for the enterprise (15%)
 
 [Lesson 1: Quickstart build your first GitHub Action](https://docs.github.com/en/actions/quickstart#creating-your-first-workflow)
+The resuling action is a [yaml file](https://github.com/desinole/github-action-exam-prep/blob/main/.github/workflows/action1.yml). Beware of indentation pitfalls
