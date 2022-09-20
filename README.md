@@ -33,3 +33,63 @@ jobs: # list of jobs
       - run: npm install -g bats # after nodejs is installed run this on bash shell to install bats using npm 
       - run: bats -v # run bats command # after bats is installed check version
 ```
+
+[Functioning pipeline](https://github.com/desinole/github-action-exam-prep/blob/main/.github/workflows/action2.yml)
+
+### [Lesson 3: Finding and Customizing Actions](https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions)
+
+- Reuse actions from [GitHub Marketplace](https://github.com/marketplace/actions/)
+- Badge indicates GitHub has verified creator of action as a partner org
+- You can search and install actions in your workflow by copy-pasting ths code in steps usually
+
+[Release Management](https://docs.github.com/en/actions/creating-actions/about-actions#using-release-management-for-actions)
+
+- Reuse an existing action from same repo by specifying relative path 
+
+```yaml
+      uses: ./.github/actions/hello-world-action
+```
+
+- Add an action from a different repo
+
+```yaml
+      uses: myname/sample-action@v3
+```
+
+- Use a container instead of yaml files
+
+```yaml
+       uses: docker://alpine:3.8
+```
+
+- You can use tags, branches or SHA values to release different versions of an action by specifying these value after the `@` symbol
+
+```yaml
+steps:
+  - uses: actions/javascript-action@v1.0.1 # where v1.0.1 is the tag
+```
+
+```yaml
+steps:
+  - uses: actions/javascript-action@172239021f7ba04fe7327647b213799853a9eb89 # use a commit SHA
+```
+
+```yaml
+steps:
+  - uses: actions/javascript-action@main #
+```
+
+- Specify inputs and outputs for actions
+
+```yaml
+name: "Example"
+description: "Receives file and generates output"
+inputs:
+  file-path: # input name/id
+    description: "Path to test script"
+    required: true # if not specified or false, this makes input optional
+    default: "test-file.js" # default value for input
+outputs:
+  results-file: # output name/id
+    description: "Path to results file"
+```
