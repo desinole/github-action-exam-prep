@@ -40,7 +40,7 @@ jobs: # list of jobs
 
 - Reuse actions from [GitHub Marketplace](https://github.com/marketplace/actions/)
 - Badge indicates GitHub has verified creator of action as a partner org
-- You can search and install actions in your workflow by copy-pasting ths code in steps usually
+- You can search and install actions in your workflow by copy-pasting ths code in steps usually. [Sample pipeline](https://github.com/desinole/github-action-exam-prep/blob/main/.github/workflows/action3.yml) with npm step reused from market
 
 [Release Management](https://docs.github.com/en/actions/creating-actions/about-actions#using-release-management-for-actions)
 
