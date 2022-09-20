@@ -10,4 +10,9 @@ Instead of [Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/au
 4. Manage GitHub Actions for the enterprise (15%)
 
 [Lesson 1: Quickstart build your first GitHub Action](https://docs.github.com/en/actions/quickstart#creating-your-first-workflow)
-The resuling action is a [yaml file](https://github.com/desinole/github-action-exam-prep/blob/main/.github/workflows/action1.yml). Beware of indentation pitfalls
+
+
+- The resuling action is a [yaml file](https://github.com/desinole/github-action-exam-prep/blob/main/.github/workflows/action1.yml). 
+- Beware of indentation pitfalls
+- [Repo of starter workflows](https://github.com/actions/starter-workflows), has sample workflows by language and deployment env. Note: probably a minute subset on here could be relevant to the exam (just a guess) so review later
+- [Repo of complex workflows](https://docs.github.com/en/actions/examples), could be relevant to exam (just a guess)
